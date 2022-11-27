@@ -17,16 +17,14 @@ img{
 
 .row1, .row2{
     display: flex;
-    
-    
-    padding: 1em 0;
+    justify-content: space-between;
    
 }
 
 .dark{
     background: rgb(9, 9, 59);
     color: white;
-    padding: 1em;
+    
 }
 .col1{
     width: 25%;
@@ -37,6 +35,17 @@ img{
 }
 .col3{
     width: 75%;
+}
+
+@media(max-width: 768px){
+   .row1,.row2{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .col1,.col2,.col3{
+    width: 100%;
+   }
 }
 
 
